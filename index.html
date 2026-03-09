@@ -525,6 +525,79 @@
 
         // init
         goTo(0);
+        (function () {
+            const track = document.querySelector('.slider-track');
+            const prevBtn = document.querySelector('.slider-btn.prev');
+            const nextBtn = document.querySelector('.slider-btn.next');
+
+            // All 10 cards data (src + alt + rank)
+            const cards = [
+                { src: './assets/images/dhurandhar.jpg', alt: 'Dhurandhar', rank: 1 },
+                { src: './assets/images/taskaree.jpg', alt: 'Taskaree', rank: 2 },
+                { src: './assets/images/tere.jpg', alt: 'Tere', rank: 3 },
+                { src: './assets/images/royalRumble.jpg', alt: 'Royal Rumble', rank: 4 },
+                { src: './assets/images/greatIndia.jpg', alt: 'Great India', rank: 5 },
+                { src: './assets/images/strangerthings.jpg', alt: 'Show 6', rank: 6 },
+                { src: './assets/images/bride.jpg', alt: 'Show 7', rank: 7 },
+                { src: './assets/images/jolly-8.jpg', alt: 'Show 8', rank: 8 },
+                { src: './assets/images/ne-9.jpg', alt: 'Show 9', rank: 9 },
+                { src: './assets/images/image-10.jpg', alt: 'Show 10', rank: 10 },
+            ];
+
+            let currentSlide = 0;
+
+            function getCardsPerSlide() {
+                const w = window.innerWidth;
+                if (w < 576) return 3;
+                if (w < 768) return 4;
+                return 5;
+            }
+
+            function buildSlides() {
+                const perSlide = getCardsPerSlide();
+                track.innerHTML = '';
+                currentSlide = 0;
+
+                for (let i = 0; i < cards.length; i += perSlide) {
+                    const slide = document.createElement('div');
+                    slide.className = 'slide';
+
+                    cards.slice(i, i + perSlide).forEach(c => {
+                        slide.innerHTML += `
+          <div class="card">
+            <figure><img src="${c.src}" alt="${c.alt}" /></figure>
+            <span class="card-rank">${c.rank}</span>
+          </div>`;
+                    });
+
+                    track.appendChild(slide);
+                }
+
+                updateSlider();
+            }
+
+            function updateSlider() {
+                const totalSlides = track.querySelectorAll('.slide').length;
+                track.style.transform = `translateX(-${currentSlide * 100}%)`;
+                prevBtn.classList.toggle('hidden', currentSlide === 0);
+                nextBtn.classList.toggle('hidden', currentSlide >= totalSlides - 1);
+            }
+
+            prevBtn.addEventListener('click', () => { if (currentSlide > 0) { currentSlide--; updateSlider(); } });
+            nextBtn.addEventListener('click', () => {
+                const totalSlides = track.querySelectorAll('.slide').length;
+                if (currentSlide < totalSlides - 1) { currentSlide++; updateSlider(); }
+            });
+
+            // Rebuild on resize (debounced)
+            let resizeTimer;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(buildSlides, 200);
+            });
+
+            buildSlides(); // init
+        })();
     </script>
 
 </body>
