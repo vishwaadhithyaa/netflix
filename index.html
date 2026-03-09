@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Netflix India – Watch Shows Online, Watch Movies Online</title>
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="./assets/images/Netflix-Logo-PNG-Transparent-Image.webp" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./navBar.css">
+    <link rel="stylesheet" href="./heroSection.css">
+    <link rel="stylesheet" href="./trendingNow.css">
+    <link rel="stylesheet" href="./toJoin.css">
+    <link rel="stylesheet" href="./faq.css">
+    <link rel="stylesheet" href="./readyWatch.css">
+    <link rel="stylesheet" href="./contact.css"> -->
+    <!-- font -->
+    <!-- Inter (Netflix style primary font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header> <!--1.parentContainer -->
+        <nav class="navBar"> <!--2.component -->
+            <div class="navContainer"> <!-- 3.componentContainer -->
+
+            </div>
+        </nav>
+        <div class="heroSection"><!--2.component -->
+            <div class="heroSectionContainer"> <!-- 3.componentContainer -->
+                <div class="navBody"><!--4.row-->
+                    <div class="navBlock"><!--5.column-->
+                        <div class="navBox"><!--6.subcolumn-->
+                            <figure>
+                                <img src="./assets/images/Logos-Readability-Netflix-logo.png" alt="logo">
+                            </figure>
+
+                        </div>
+                    </div>
+                    <div class="navBlockOne"><!--5.column-->
+                        <div class="navBoxOne"><!--6.subcolumn-->
+                            <button type="submit" class="language">English</button>
+                            <button type="submit" class="btn">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="heroSectionBody"><!--4.row-->
+                    <div class="heroSectionBlock"><!--5.column-->
+                        <div class="heroSectionBox"><!--6.subcolumn-->
+                            <h1>Unlimited movies, <br> shows, and more</h1>
+                            <p>Starts at ₹149. Cancel at any time.</p>
+                            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="heroSectionBodyOne"><!--4.row-->
+                    <div class="heroSectionBlockOne"><!--5.column-->
+                        <div class="heroSectionBoxOne"><!--6.subcolumn-->
+
+                            <form>
+                                <input type="text" placeholder="Email address">
+                            </form>
+                            <button type="submit" class="bttn">Get Started <i
+                                    class="fa fa-angle-right m-l-5"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="heroSectionBlockTwo"><!--5.column-->
+                        <div class="heroSectionBoxTwo"><!--6.subcolumn-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main><!--1.parentContainer -->
+        <div class="trendingNow">
+            <div class="trendingNowContainer">
+
+                <div class="trendingNowBody">
+                    <div class="trendingNowBox">
+                        <h2>Trending Now</h2>
+                    </div>
+                </div>
+
+                <div class="slider-wrapper">
+
+                    <!-- Prev Arrow -->
+                    <button class="slider-btn prev hidden" aria-label="Previous">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="15 18 9 12 15 6" />
+                        </svg>
+                    </button>
+
+                    <div class="slider-viewport">
+                        <div class="slider-track">
+
+                            <!-- SLIDE 1 — cards 1–5 -->
+                            <div class="slide">
+                                <div class="card">
+                                    <figure><img src="./assets/images/dhurandhar.jpg" alt="Dhurandhar" /></figure>
+                                    <span class="card-rank">1</span>
+                                </div>
+                                <div class="card">
+                                    <figure><img src="./assets/images/taskaree.jpg" alt="Taskaree" /></figure>
+                                    <span class="card-rank">2</span>
+                                </div>
+                                <div class="card">
+                                    <figure><img src="./assets/images/tere.jpg" alt="Tere" /></figure>
+                                    <span class="card-rank">3</span>
+                                </div>
+                                <div class="card">
+                                    <figure><img src="./assets/images/royalRumble.jpg" alt="Royal Rumble" /></figure>
+                                    <span class="card-rank">4</span>
+                                </div>
+                                <div class="card">
+                                    <figure><img src="./assets/images/greatIndia.jpg" alt="Great India" /></figure>
+                                    <span class="card-rank">5</span>
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 — cards 6–10 (replace src with your images) -->
+                            <div class="slide">
+                                <div class="card">
+                                    <figure><img src="./assets/images/strangerthings.jpg" alt="Show 6" /></figure>
+                                    <span class="card-rank">6</span>
+                                </div>
+                                <div class="card">
+                                    <figure><img src="./assets/images/bride.jpg" alt="Show 7" /></figure>
+                                    <span class="card-rank">7</span>
+                                </div>
+                                <div class="card">
+                                    <figure><img src="./assets/images/jolly-8.jpg" alt="Show 8" /></figure>
+                                    <span class="card-rank">8</span>
+                                </div>
+                                <div class="card">
+                                    <figure><img src="./assets/images/ne-9.jpg" alt="Show 9" /></figure>
+                                    <span class="card-rank">9</span>
+                                </div>
+                                <div class="card">
+                                    <figure><img src="./assets/images/image-10.jpg" alt="Show 10" /></figure>
+                                    <span class="card-rank">10</span>
+                                </div>
+                            </div>
+
+                        </div><!-- /slider-track -->
+                    </div><!-- /slider-viewport -->
+
+                    <!-- Next Arrow -->
+                    <button class="slider-btn next" aria-label="Next">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                    </button>
+
+                </div><!-- /slider-wrapper -->
+            </div>
+        </div>
+
+        <div class="toJoin">
+            <div class="toJoinContainer">
+
+                <div class="toJoinBody">
+                    <div class="toJoinBlock">
+                        <div class="toJoinBox">
+                            <h2>More reasons to join</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toJoinBodyOne">
+
+                    <!-- CARD 1 – TV -->
+                    <div class="toJoinBlockOne">
+                        <div class="cardBox">
+                            <div class="cardHeader">
+                                <h3>Enjoy on your TV</h3>
+                            </div>
+                            <div class="cardMain">
+                                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and
+                                    more.</p>
+                            </div>
+                            <div class="cardFooter">
+                                <!-- TV icon -->
+                                <svg class="card-icon" viewBox="0 0 64 64" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="6" y="12" width="52" height="34" rx="4" class="icon-stroke"
+                                        stroke-width="3" fill="none" />
+                                    <line x1="20" y1="52" x2="44" y2="52" class="icon-stroke" stroke-width="3"
+                                        stroke-linecap="round" />
+                                    <line x1="32" y1="46" x2="32" y2="52" class="icon-stroke" stroke-width="3"
+                                        stroke-linecap="round" />
+                                    <!-- screen glare -->
+                                    <line x1="13" y1="19" x2="20" y2="19" class="icon-stroke" stroke-width="2.5"
+                                        stroke-linecap="round" opacity="0.5" />
+                                    <!-- play triangle -->
+                                    <polygon points="26,22 26,36 42,29" class="icon-fill" opacity="0.9" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 – Download -->
+                    <div class="toJoinBlockTwo">
+                        <div class="cardBox">
+                            <div class="cardHeader">
+                                <h3>Download your shows to watch offline</h3>
+                            </div>
+                            <div class="cardMain">
+                                <p>Save your favourites easily and always have something to watch.</p>
+                            </div>
+                            <div class="cardFooter">
+                                <!-- Download / phone icon -->
+                                <svg class="card-icon" viewBox="0 0 64 64" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="18" y="6" width="28" height="48" rx="5" class="icon-stroke"
+                                        stroke-width="3" fill="none" />
+                                    <line x1="29" y1="48" x2="35" y2="48" class="icon-stroke" stroke-width="3"
+                                        stroke-linecap="round" />
+                                    <!-- down arrow -->
+                                    <line x1="32" y1="17" x2="32" y2="34" class="icon-stroke" stroke-width="3"
+                                        stroke-linecap="round" />
+                                    <polyline points="24,27 32,35 40,27" class="icon-stroke" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 – Watch everywhere -->
+                    <div class="toJoinBlockThree">
+                        <div class="cardBox">
+                            <div class="cardHeader">
+                                <h3>Watch everywhere</h3>
+                            </div>
+                            <div class="cardMain">
+                                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                            </div>
+                            <div class="cardFooter">
+                                <!-- Multi-device icon -->
+                                <svg class="card-icon" viewBox="0 0 64 64" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <!-- laptop -->
+                                    <rect x="8" y="14" width="36" height="24" rx="3" class="icon-stroke"
+                                        stroke-width="2.8" fill="none" />
+                                    <line x1="4" y1="42" x2="48" y2="42" class="icon-stroke" stroke-width="2.8"
+                                        stroke-linecap="round" />
+                                    <!-- phone overlapping -->
+                                    <rect x="42" y="28" width="14" height="24" rx="3" class="icon-stroke"
+                                        stroke-width="2.5" fill="rgba(0,0,0,0.3)" />
+                                    <line x1="47" y1="47" x2="51" y2="47" class="icon-stroke" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <!-- play on laptop screen -->
+                                    <polygon points="19,21 19,31 30,26" class="icon-fill" opacity="0.85" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 – Kids -->
+                    <div class="toJoinBlockFour">
+                        <div class="cardBox">
+                            <div class="cardHeader">
+                                <h3>Create profiles for kids</h3>
+                            </div>
+                            <div class="cardMain">
+                                <p>Send kids on adventures with their favourite characters in a space made just for them
+                                    — free with your membership.</p>
+                            </div>
+                            <div class="cardFooter">
+                                <!-- Kids / star icon -->
+                                <svg class="card-icon" viewBox="0 0 64 64" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <!-- smiley face circle -->
+                                    <circle cx="32" cy="24" r="14" class="icon-stroke" stroke-width="3" fill="none" />
+                                    <!-- eyes -->
+                                    <circle cx="27" cy="21" r="2" class="icon-fill" />
+                                    <circle cx="37" cy="21" r="2" class="icon-fill" />
+                                    <!-- smile -->
+                                    <path d="M25 28 Q32 34 39 28" class="icon-stroke" stroke-width="2.8"
+                                        stroke-linecap="round" fill="none" />
+                                    <!-- star below -->
+                                    <polygon
+                                        points="32,42 34.4,48.6 41.4,48.6 35.9,52.6 38.3,59.2 32,55.2 25.7,59.2 28.1,52.6 22.6,48.6 29.6,48.6"
+                                        class="icon-fill" opacity="0.85" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- /toJoinBodyOne -->
+            </div><!-- /toJoinContainer -->
+        </div>
+        <div class="faq">
+            <div class="faqContainer">
+                <div class="faqBody">
+
+                    <div class="faqBox">
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+
+                    <!-- Item 1 -->
+                    <div class="faq-item">
+                        <button type="button">
+                            <span>What is Netflix?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                movies, anime, documentaries and more – on thousands of internet-connected
+                                devices.<br><br>
+                                You can watch as much as you want, whenever you want, without a single ad – all for one
+                                low monthly price. There's always something new to discover, and new TV shows and movies
+                                are added every week!</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="faq-item">
+                        <button type="button">
+                            <span>How much does Netflix cost?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for
+                                one fixed monthly fee. Plans range from ₹149 to ₹649/month.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="faq-item">
+                        <button type="button">
+                            <span>Where can I watch?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web
+                                at netflix.com from your personal computer or on any internet-connected device that
+                                offers the Netflix app, including smart TVs, smartphones, tablets, streaming media
+                                players and game consoles.<br><br>
+                                You can also download your favourite shows with the iOS or Android app. Use downloads to
+                                watch while you're on the go and without an internet connection. Take Netflix with you
+                                anywhere.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="faq-item">
+                        <button type="button">
+                            <span>How do I cancel?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Netflix is flexible. You can easily cancel your account online in two clicks. There are
+                                no cancellation fees – start or stop your account anytime.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="faq-item">
+                        <button type="button">
+                            <span>What can I watch on Netflix?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Netflix has an extensive library of feature films, documentaries, shows, anime,
+                                award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="faq-item">
+                        <button type="button">
+                            <span>Is Netflix good for kids?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The Netflix Kids experience is included in your membership to give parents control while
+                                kids enjoy family-friendly TV shows and films in their own space.<br> <br>
+                                Kids profiles come with PIN-protected parental controls that let you restrict the
+                                maturity rating of content kids can watch and block specific titles you don't want kids
+                                to see.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="readyWatch"><!--2.component -->
+            <div class="readyWatchContainer"><!-- 3.componentContainer -->
+                <div class="readyWatchBody"><!--4.row-->
+                    <div class="readyWatchBlock"><!--5.column-->
+                        <div class="readyWatchBox "><!--6.subcolumn-->
+                            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                            <form>
+                                <input type="text" placeholder="Email address">
+                            </form>
+                            <button type="submit" class="bttn">Get Started <i
+                                    class="fa fa-angle-right m-l-5"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer><!--1.parentContainer -->
+        <div class="contact"><!--2.component -->
+            <div class="contactContainer"> <!-- 3.componentContainer -->
+                <div class="contactBody"><!--4.row-->
+                    <div class="contactBlock"><!--5.column-->
+                        <div class="contactBox"><!--6.subcolumn-->
+                            <p>Questions? Call 000-800-919-1743</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactBodyOne"><!--4.row-->
+                    <div class="contactBlockOne"><!--5.column-->
+                        <div class="contactBoxOne"><!--6.subcolumn-->
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Investor Relations</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Speed Test</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contactBlockTwo"><!--5.column-->
+                        <div class="contactBoxOne"><!--6.subcolumn-->
+                            <ul>
+                                <li><a href="#">Help Centre</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Cookie Preferences</a></li>
+                                <li><a href="#">Legal Notices</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contactBlockThree"><!--5.column-->
+                        <div class="contactBoxOne"><!--6.subcolumn-->
+                            <ul>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Ways to Watch</a></li>
+                                <li><a href="#">Corporate Information</a></li>
+                                <li><a href="#">Only on Netflix</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contactBlockFour"><!--5.column-->
+                        <div class="contactBoxOne"><!--6.subcolumn-->
+                            <ul>
+                                <li><a href="#">Media Centre</a></li>
+                                <li><a href="#">Terms of Use</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactBodyTwo"><!--4.row-->
+                    <div class="contactBlockFive"><!--5.column-->
+                        <div class="contactBoxSix"><!--6.subcolumn-->
+                            <button type="submit" class="lang">English</button>
+                            <p>Netflix India</p>
+                            <p class="learnMore">This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                                Learn more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        document.querySelectorAll('.faq-item button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.closest('.faq-item');
+                const isOpen = item.classList.contains('open');
+
+                // Close all items first
+                document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+
+                // If it wasn't open, open it
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+    </script>
+    <script>
+        const track = document.querySelector('.slider-track');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.slider-btn.prev');
+        const nextBtn = document.querySelector('.slider-btn.next');
+        const dots = document.querySelectorAll('.dot');
+        let current = 0;
+        const total = slides.length;
+
+        function goTo(index) {
+            current = index;
+            track.style.transform = `translateX(-${current * 100}%)`;
+
+            // arrows
+            prevBtn.classList.toggle('hidden', current === 0);
+            nextBtn.classList.toggle('hidden', current === total - 1);
+        }
+
+        prevBtn.addEventListener('click', () => { if (current > 0) goTo(current - 1); });
+        nextBtn.addEventListener('click', () => { if (current < total - 1) goTo(current + 1); });
+        dots.forEach(d => d.addEventListener('click', () => goTo(+d.dataset.index)));
+
+        // init
+        goTo(0);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-wrap: pretty;
+  /* border: 1px solid red; */
+  /* border: 1px solid black; */
+}
+
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: rgb(229, 9, 20);
+  --tertiaryColor: #333333;
+  --darkColor: #000000;
+  --lightColor: #ffffff;
+  --regularFont: 1.6rem;
+  --headingFont: 2.5rem;
+  --ffPrimary: sans-serif;
+  --ffSecondary: "Merienda", cursive;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: var(--ffPrimary);
+  color: var(--darkColor);
+  font-size: var(--regularFont);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-optical-sizing: auto;
+  /* border: 1px solid black; */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+  text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .navBar{
+    background-color: rgb(129, 94, 48)
+}
+.navContainer{
+    background-color: aliceblue;
+} */
+
+.navBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+}
+
+.navBox img {
+  width: auto;
+  height: 4rem;
+}
+
+.navBlock,
+.navBlockOne {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.navBox {
+  padding: 2.5rem 0rem 1rem 14.5rem;
+}
+
+.navBoxOne {
+  position: absolute;
+  top: 2.5rem;
+  right: 15rem;
+}
+
+.btn {
+  font-family: var(--ffPrimary);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  border: none;
+  border-radius: 3px;
+  padding: .6rem 1.3rem;
+
+}
+
+/* navbarcss */
+
+/* herosection */
+.heroSection {
+  background-image: url(./assets/images/netflix-bgimg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.heroSectionBody::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.heroSectionBox {
+  padding: 15rem 0rem 0rem 0rem;
+  /* background-color: antiquewhite ; */
+}
+
+.heroSectionBlock,
+.heroSectionBox,
+.heroSectionBoxOne,
+.heroSectionBlockTwo {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.heroSectionBox h1 {
+  color: var(--lightColor);
+  font-size: 5.5rem;
+  font-family: var(--ffPrimary);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.heroSection p {
+  color: white;
+  font-family: var(--ffPrimary);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+.heroSectionBox h3 {
+  font-family: var(--ffPrimary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.heroSectionBodyOne {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.heroSectionBoxOne {
+  display: flex;
+  justify-content: center;
+}
+
+.heroSectionBoxOne form input {
+  padding: 1.6rem 1.6rem;
+  background-color: rgb(0, 0, 0, .3);
+  border-color: white;
+  border-radius: 3px;
+  border-width: 1px;
+  width: 37rem;
+  font-size: 1.75rem;
+  font-family: var(--ffPrimary);
+  font-weight: 500;
+  color: white;
+  margin-right: 1rem;
+
+}
+
+.bttn {
+  font-family: var(--ffPrimary);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  border: none;
+  border-radius: 3px;
+  padding: 1.1rem 1.6rem;
+  width: 20rem;
+
+}
+
+.arrow {
+  font-size: 2.5rem;
+}
+
+.language {
+
+  font-size: 1.6rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border: 1px white solid;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 3px;
+  border-color: rgba(253, 246, 246, 0.5);
+}
+
+/* herosection */
+
+/* trendingNow */
+.trendingNow {
+  background-color: rgb(0, 0, 0);
+}
+
+.trendingNowContainer {
+  padding: 3rem 0rem;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.trendingNowBox h2 {
+  color: white;
+  font-size: 2.4rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* ── SLIDER WRAPPER ── */
+.slider-wrapper {
+  position: relative;
+}
+
+/* ── TRACK + VIEWPORT ── */
+.slider-viewport {
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* ── EACH SLIDE (holds 5 cards) ── */
+.slide {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.6rem;
+  min-width: 100%;
+}
+
+/* ── CARD ── */
+.card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.card figure {
+  margin: 0;
+}
+
+.card figure img {
+  /* width: 100%;
+  height: 30rem;
+  object-fit: cover; */
+  border-radius: 6px;
+  display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.card:hover figure img {
+  transform: scale(1.06);
+  filter: brightness(0.6);
+}
+
+/* Rank number overlay */
+.card-rank {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 0.8rem;
+  font-size: 8rem;
+  font-weight: 900;
+  font-family: var(--ffPrimary);
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  color: #000000;
+  line-height: 1;
+  opacity: 0.85;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── ARROWS ── */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 40%;
+  background: rgba(49, 48, 48, 0.6);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+.slider-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.slider-btn.prev {
+  left: 0;
+  border-radius: 6px 0 0 6px;
+}
+
+.slider-btn.next {
+  right: 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.slider-btn svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: white;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Hide prev on first slide */
+.slider-btn.prev.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* trendingNow */
+
+.toJoin {
+  background-color: rgb(0, 0, 0);
+}
+
+.toJoinContainer {
+  padding: 3rem 0rem 6rem 0rem;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.toJoinBox h2 {
+  color: white;
+  font-size: 2.4rem;
+  font-family: var(--ffPrimary);
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.toJoinBodyOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* ── CARD ── */
+.cardBox {
+  position: relative;
+  width: 29.5rem;
+  height: 25rem;
+  border-radius: 15px;
+  overflow: hidden;
+  /* Netflix dark-blue-to-purple gradient base */
+  background: linear-gradient(135deg, #13142b 0%, #2d1b69 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Glowing orb — unique color per card via nth-child */
+.cardBox::before {
+  content: "";
+  position: absolute;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  bottom: -5rem;
+  right: -4rem;
+  filter: blur(40px);
+  opacity: 0.55;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.cardBox:hover::before {
+  opacity: 0.8;
+}
+
+/* Card 1 — blue orb */
+.toJoinBlockOne .cardBox::before {
+  background: radial-gradient(circle, #d34141 0%, transparent 70%);
+}
+
+/* Card 2 — teal orb */
+.toJoinBlockTwo .cardBox::before {
+  background: radial-gradient(circle, #d34141 0%, transparent 70%);
+}
+
+/* Card 3 — violet orb */
+.toJoinBlockThree .cardBox::before {
+  background: radial-gradient(circle, #d34141 0%, transparent 70%);
+}
+
+/* Card 4 — pink orb */
+.toJoinBlockFour .cardBox::before {
+  background: radial-gradient(circle, #d34141 0%, transparent 70%);
+}
+
+/* ── CARD CONTENT ── */
+.cardHeader h3 {
+  font-family: var(--ffPrimary);
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  padding: 2rem 1.5rem 0.8rem 1.8rem;
+  line-height: 1.3;
+  position: relative;
+  z-index: 1;
+}
+
+.cardMain {
+  position: relative;
+  z-index: 1;
+}
+
+.cardMain p {
+  font-family: var(--ffPrimary);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 1.5rem 0 1.8rem;
+  line-height: 1.5;
+}
+
+/* ── ICON AREA ── */
+.cardFooter {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  z-index: 1;
+}
+
+.card-icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  opacity: 0.92;
+}
+
+/* ── SVG icon colors per card ── */
+.toJoinBlockOne .card-icon .icon-stroke {
+  stroke: #7eb3ff;
+}
+
+.toJoinBlockOne .card-icon .icon-fill {
+  fill: #7eb3ff;
+}
+
+.toJoinBlockTwo .card-icon .icon-stroke {
+  stroke: #5efff5;
+}
+
+.toJoinBlockTwo .card-icon .icon-fill {
+  fill: #5efff5;
+}
+
+.toJoinBlockThree .card-icon .icon-stroke {
+  stroke: #c4a6ff;
+}
+
+.toJoinBlockThree .card-icon .icon-fill {
+  fill: #ffc2a6;
+}
+
+.toJoinBlockFour .card-icon .icon-stroke {
+  stroke: #ffadd2;
+}
+
+.toJoinBlockFour .card-icon .icon-fill {
+  fill: #ffadd2;
+}
+
+/* faq */
+.faq {
+  background-color: black;
+}
+
+.faqContainer {
+  max-width: 1250px;
+  margin: auto;
+  padding: 4rem 0rem 6rem 0rem;
+}
+
+.faqBox h2 {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-family: var(--ffPrimary);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+/* ── ACCORDION ITEM ── */
+.faq-item {
+  margin-bottom: 0.8rem;
+}
+
+.faq-item button {
+  width: 100%;
+  min-height: 8rem;
+  font-size: 2.5rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+  color: white;
+  text-align: start;
+  background-color: rgb(45, 45, 45);
+  border: none;
+  padding: 1.8rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  transition: background-color 0.2s ease;
+}
+
+.faq-item button:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+/* ── ICON ── */
+.faq-icon {
+  font-size: 4.5rem;
+  font-weight: 100;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+  color: white;
+  user-select: none;
+}
+
+/* When open: rotate + to × */
+.faq-item.open button {
+  background-color: rgb(45, 45, 45);
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+}
+
+/* ── ANSWER PANEL ── */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgb(45, 45, 45);
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+  color: white;
+  font-size: 2.4rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0 2rem;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 50rem;
+  /* tall enough for any answer */
+  /* padding: 2.5rem 0; */
+}
+
+/* faq */
+
+/* readywatch */
+.readyWatch {
+  background-color: rgb(0, 0, 0);
+}
+
+.readyWatchContainer {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.readyWatchBody {
+  padding-bottom: 3rem;
+}
+
+.readyWatchBox h3 {
+  font-family: var(--ffPrimary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.readyWatchBox form {
+  display: inline;
+  justify-content: center;
+  padding-left: 26rem;
+  padding-right: 0.5rem;
+}
+
+.readyWatchBox form input {
+  width: 55rem;
+  height: 5.5rem;
+  font-size: 1.75rem;
+  font-family: var(--ffPrimary);
+  font-weight: 500;
+  border: 1px #e9ecef solid;
+  border-radius: 3px;
+  background-color: rgb(15, 15, 15);
+  color: #ffffffb3;
+  padding-left: 1.5rem;
+
+}
+
+.bttn {
+  font-family: var(--ffPrimary);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primaryColor);
+  background-color: var(--secondaryColor);
+  border: none;
+  border-radius: 3px;
+  padding: 1.3rem 1.6rem;
+  width: 20rem;
+
+}
+
+/* readywatch */
+
+/* contact */
+.contact {
+  background-color: black;
+}
+
+.contactContainer {
+  max-width: 1250px;
+  margin: auto;
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+}
+
+.contactBox p {
+  color: #ffffffb3;
+  ;
+  font-size: 1.6rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+  padding-bottom: 4rem;
+}
+
+.contactBodyOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contactBoxOne ul li {
+  padding-bottom: 1rem;
+}
+
+.contactBoxOne ul li a {
+  color: #ffffffb3;
+  font-size: 1.4rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+.contactBoxOne ul,
+p {
+  color: #ffffffb3;
+  font-size: 1.4rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+}
+
+.lang {
+  margin: 4rem 0rem 3rem 0rem;
+  font-size: 1.6rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border: 1px white solid;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 3px;
+}
+
+.contactBoxSix p {
+  padding-bottom: 3rem;
+  font-size: 1.4rem;
+  font-family: var(--ffPrimary);
+  font-weight: 400;
+}
+
+.learnMore {
+  font-size: 1rem;
+  font-family: var(--ffPrimary);
+  font-weight: 100;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+/* contact */
+
+/* ── XS: < 576px  (mobile portrait) ────────── */
+@media (max-width: 575.98px) {
+
+  /* NAV */
+  .navBody {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .navBox {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .navBox img {
+    height: 3rem;
+    margin: auto;
+  }
+
+  .navBoxOne {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.5rem 1rem;
+  }
+
+  .language {
+    width: 8rem;
+    font-size: 1.3rem;
+  }
+
+  /* HERO */
+  .heroSectionBox {
+    padding: 8rem 1.5rem 0;
+  }
+
+  .heroSectionBox h1 {
+    font-size: 2.8rem;
+    line-height: 1.25;
+  }
+
+  .heroSection p {
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .heroSectionBox h3 {
+    font-size: 1.4rem;
+    padding: 0 1.5rem;
+  }
+
+  .heroSectionBoxOne {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .heroSectionBoxOne form input {
+    width: 100%;
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+
+  .bttn {
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem 1.6rem;
+  }
+
+  /* TRENDING NOW */
+  .trendingNowContainer {
+    padding: 2rem 1.5rem;
+  }
+
+  .trendingNowBodyOne {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .trendingNowBlockFive {
+    display: none;
+  }
+
+  .trendingNowBoxOne figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* TO JOIN */
+  .toJoinContainer {
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  .toJoinBodyOne {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cardBox {
+    width: 100%;
+    /* height: auto; */
+    padding-bottom: 2rem;
+  }
+
+  /* FAQ */
+  .faqContainer {
+    padding: 1rem 1.5rem 4rem;
+  }
+
+  .faqBox button {
+    width: 100%;
+    height: auto;
+    font-size: 1.6rem;
+    padding: 1.5rem 1.5rem;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  /* READY WATCH */
+  .readyWatchBox {
+    padding: 0 1.5rem;
+  }
+
+  .readyWatchBox h3 {
+    font-size: 1.4rem;
+    padding: 0 0 1.5rem;
+  }
+
+  .readyWatchBox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .readyWatchBox form input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .readyWatchBox .bttn {
+    width: 100%;
+    display: block;
+  }
+
+  /* FOOTER */
+  .contactContainer {
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  .contactBodyOne {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .contactBoxSix {
+    padding-top: 1rem;
+  }
+}
+
+/* ── SM: 576px – 767px  (mobile landscape) ─── */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* NAV */
+  .navBox {
+    padding: 2rem 0 0.5rem 2rem;
+  }
+
+  .navBoxOne {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  /* HERO */
+  .heroSectionBox {
+    padding: 10rem 2rem 0;
+  }
+
+  .heroSectionBox h1 {
+    font-size: 3.5rem;
+  }
+
+  .heroSectionBoxOne {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .heroSectionBoxOne form input {
+    width: 44rem;
+    margin-right: 0;
+  }
+
+  .bttn {
+    width: 44rem;
+    font-size: 2rem;
+  }
+
+  /* TRENDING NOW */
+  .trendingNowContainer {
+    padding: 2.5rem 2rem;
+  }
+
+  .trendingNowBodyOne {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .trendingNowBlockFour,
+  .trendingNowBlockFive {
+    display: none;
+  }
+
+  /* TO JOIN */
+  .toJoinContainer {
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .toJoinBodyOne {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .cardBox {
+    width: 100%;
+    /* height: auto; */
+    padding-bottom: 2rem;
+  }
+
+  /* FAQ */
+  .faqContainer {
+    padding: 1rem 2rem 4rem;
+  }
+
+  .faqBox button {
+    width: 100%;
+    height: auto;
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    white-space: normal;
+  }
+
+  /* READY WATCH */
+  .readyWatchBox {
+    padding: 0 2rem;
+  }
+
+  .readyWatchBox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .readyWatchBox form input {
+    width: 44rem;
+    margin-bottom: 1rem;
+  }
+
+  .readyWatchBox .bttn {
+    width: 44rem;
+    display: block;
+  }
+
+  /* FOOTER */
+  .contactContainer {
+    padding: 4rem 2rem 6rem;
+  }
+
+  .contactBodyOne {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ── MD: 768px – 991px  (tablet) ─────────────── */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* NAV */
+  .navBox {
+    padding: 2rem 0 0.5rem 4rem;
+  }
+
+  .navBoxOne {
+    top: 2.2rem;
+    right: 4rem;
+  }
+
+  /* HERO */
+  .heroSectionBox {
+    padding: 12rem 4rem 0;
+  }
+
+  .heroSectionBox h1 {
+    font-size: 4rem;
+  }
+
+  .heroSectionBoxOne {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .heroSectionBoxOne form input {
+    width: 36rem;
+    margin-right: 0;
+  }
+
+  .bttn {
+    font-size: 2rem;
+    width: 18rem;
+  }
+
+  /* TRENDING NOW */
+  .trendingNowContainer {
+    padding: 2.5rem 4rem;
+    max-width: 100%;
+  }
+
+  .trendingNowBodyOne {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .trendingNowBlockFour,
+  .trendingNowBlockFive {
+    display: none;
+  }
+
+  /* TO JOIN */
+  .toJoinContainer {
+    padding: 2.5rem 4rem 5rem;
+    max-width: 100%;
+  }
+
+  .toJoinBodyOne {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .cardBox {
+    width: 100%;
+    /* height: auto; */
+    padding-bottom: 2rem;
+  }
+
+  /* FAQ */
+  .faqContainer {
+    padding: 1rem 4rem 5rem;
+    max-width: 100%;
+  }
+
+  .faqBox button {
+    width: 100%;
+    height: auto;
+    font-size: 2rem;
+    padding: 1.8rem 2rem;
+    white-space: normal;
+  }
+
+  /* READY WATCH */
+  .readyWatchBox {
+    padding: 0 4rem;
+
+  }
+
+  .readyWatchBox form {
+    display: inline;
+    padding: 0;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+
+  .readyWatchBox form input {
+    width: 40rem;
+  }
+
+  .readyWatchBox .bttn {
+    width: 35rem;
+  }
+
+  /* FOOTER */
+  .contactContainer {
+    padding: 4rem 4rem 8rem;
+    max-width: 100%;
+  }
+}
+
+/* ── LG: 992px – 1199px  (desktop) ─────────── */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  /* NAV */
+  .navBox {
+    padding: 2.5rem 0 1rem 6rem;
+  }
+
+  .navBoxOne {
+    top: 2.5rem;
+    right: 6rem;
+  }
+
+  /* HERO */
+  .heroSectionBox {
+    padding: 14rem 0 0;
+  }
+
+  .heroSectionBox h1 {
+    font-size: 4.8rem;
+  }
+
+  .heroSectionBoxOne form input {
+    width: 32rem;
+  }
+
+  /* TRENDING NOW */
+  .trendingNowContainer {
+    padding: 3rem 6rem;
+    max-width: 100%;
+  }
+
+  .trendingNowBodyOne {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+  }
+
+  /* TO JOIN */
+  .toJoinContainer {
+    padding: 3rem 6rem 5rem;
+    max-width: 100%;
+  }
+
+  .toJoinBodyOne {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .cardBox {
+    width: 100%;
+    /* height: auto; */
+    padding-bottom: 2rem;
+  }
+
+  /* FAQ */
+  .faqContainer {
+    padding: 1rem 6rem 5rem;
+    max-width: 100%;
+  }
+
+  .faqBox button {
+    width: 100%;
+    height: 7rem;
+    font-size: 2.2rem;
+  }
+
+  /* READY WATCH */
+  .readyWatchContainer {
+    max-width: 100%;
+    padding: 0 6rem;
+  }
+
+  .readyWatchBox form {
+    display: inline;
+    padding-left: 12rem;
+  }
+
+  .readyWatchBox form input {
+    width: 48rem;
+  }
+
+  /* FOOTER */
+  .contactContainer {
+    padding: 5rem 6rem 10rem;
+    max-width: 100%;
+  }
+}
+
+/* ── XL: 1200px – 1399px  (large desktop) ─── */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+  .navBox {
+    padding: 2.5rem 0 1rem 10rem;
+  }
+
+  .navBoxOne {
+    right: 10rem;
+  }
+
+  .trendingNowContainer {
+    max-width: 1140px;
+  }
+
+  .toJoinContainer {
+    max-width: 1140px;
+  }
+
+  .cardBox {
+    width: 26rem;
+    /* height: auto;   */
+    padding-bottom: 2rem;
+  }
+
+  .faqContainer {
+    max-width: 1140px;
+  }
+
+  .faqBox button {
+    width: 100%;
+  }
+
+  .readyWatchContainer {
+    max-width: 1140px;
+  }
+
+  .readyWatchBox form {
+    padding-left: 18rem;
+  }
+
+  .readyWatchBox form input {
+    width: 50rem;
+  }
+
+  .contactContainer {
+    max-width: 1140px;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+}
+
+/* ── XXL: ≥ 1400px  (extra-large / 4K ready) ─ */
+@media (min-width: 1400px) {
+
+  .trendingNowContainer,
+  .toJoinContainer,
+  .faqContainer,
+  .readyWatchContainer,
+  .contactContainer {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navBox {
+    padding: 2.5rem 0 1rem 14.5rem;
+  }
+
+  .navBoxOne {
+    right: 15rem;
+  }
+
+  .readyWatchBox form {
+    display: inline;
+    padding-left: 26rem;
+  }
+
+  .readyWatchBox form input {
+    width: 55rem;
+  }
+
+  .cardBox {
+    width: 29.5rem;
+    /* height: 25rem; */
+  }
+
+  .faqBox button {
+    width: 100%;
+  }
+}
